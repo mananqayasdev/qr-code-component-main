@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@font-face {
+  font-family: Outfit;
+  src: local("./font/outfit-v11-latin-regular.woff2");
+}
 
 * {
   margin: 0;
@@ -17,13 +20,13 @@ body {
   --color-slate-300: hsl(212, 45%, 89%);
   --font-oswald-regular: 400;
   --font-oswald-bold: 700;
-  --box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+  --box-shadow: 0px 1.563rem 1.563rem 0rem rgba(0, 0, 0, 0.05);
 
-  --border-radius-1: 10px;
-  --border-radius-2: 20px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-500: 40px;
+  --border-radius-1: 0.625rem;
+  --border-radius-2: 1.25rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
 }
 
 .container {
@@ -31,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 44px;
+  padding: 2.75rem;
 }
 .card {
   background-color: var(--color-white);
@@ -41,7 +44,7 @@ body {
     var(--spacing-200);
 }
 .card-wrapper {
-  max-width: 288px;
+  max-width: 18rem;
 
   display: flex;
   flex-direction: column;
@@ -49,7 +52,7 @@ body {
 }
 .card img {
   border-radius: var(--border-radius-1);
-  width: 100%;
+  max-width: 100%;
 }
 
 .card-content {
@@ -61,13 +64,13 @@ body {
 }
 .card-content h1 {
   color: var(--color-slate-900);
-  font-size: 22px;
-  line-height: 120%; /* 26.4px */
+  font-size: 1.375rem;
+  line-height: 1.2; /* 26.4px */
 }
 .card-content p {
   color: var(--color-slate-500);
   font-style: normal;
   font-weight: var(--font-oswald-regular);
-  line-height: 140%; /* 21px */
-  letter-spacing: 0.2px;
+  line-height: 1.4; /* 21px */
+  letter-spacing: 0.013em;
 }
